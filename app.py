@@ -7,8 +7,7 @@ app = Flask(__name__)
 
 # Configure the database URI:
 # Example for MySQL, adjust as per your actual database
-app.config['SQLALCHEMY_DATABASE_URI'] = 'mssql+pyodbc://@ABRAR\\MSSQLSERVER01/CityInfoDB?driver=ODBC+Driver+17+for+SQL+Server&trusted_connection=yes'
-
+app.config['SQLALCHEMY_DATABASE_URI'] = 'mssql+pyodbc://nexatechSYS:nexatech123@squaremiledb.ct60ksqggyse.eu-north-1.rds.amazonaws.com/CityInfoDB?driver=ODBC+Driver+17+for+SQL+Server'
 
 
 db = SQLAlchemy(app)
@@ -78,7 +77,13 @@ def get_location_details(location_name):
         'restaurants': restaurants
     })
 
+@app.route('/')
+def hello():
+    return "Hello, World!"
+
 if __name__ == "__main__":
+    with app.app_context():
+        db.create_all()  # This will create the tables based on the models if they don't exist
     port = int(os.environ.get("PORT", 5000))
     app.run(host="0.0.0.0", port=port)
 
