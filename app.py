@@ -7,7 +7,7 @@ app = Flask(__name__)
 
 # Configure the database URI:
 # Example for MySQL, adjust as per your actual database
-app.config['SQLALCHEMY_DATABASE_URI'] = os.getenv('DATABASE_URL', 'default_database_url')
+app.config['SQLALCHEMY_DATABASE_URI'] = 'mssql+pyodbc://nexatechSYS:nexatech123@squaremiledb.ct60ksqggyse.eu-north-1.rds.amazonaws.com/CityInfoDB?driver=FreeTDS'
 
 db = SQLAlchemy(app)
 
