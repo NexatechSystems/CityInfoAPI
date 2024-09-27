@@ -9,6 +9,7 @@ aliyun-python-sdk-sts==3.1.2
 aliyun-python-sdk-vpc==3.0.45
 asyncio-throttle==0.1.1
 autocommand==2.2.2
+awsebcli==3.21.0
 azure-common==1.1.28
 azure-core==1.30.2
 azure-identity==1.5.0
@@ -29,6 +30,7 @@ blinker==1.8.2
 boto3==1.35.8
 botocore==1.35.8
 cachetools==5.5.0
+cement==2.10.14
 certifi==2024.7.4
 cffi==1.17.0
 charset-normalizer==3.3.2
@@ -94,6 +96,7 @@ oci==2.133.0
 opentelemetry-api==1.27.0
 oss2==2.18.6
 packaging==24.1
+pathspec==0.10.1
 platformdirs==4.3.6
 policyuniverse==1.5.1.20231109
 portalocker==2.10.1
@@ -106,8 +109,10 @@ pycparser==2.22
 pycryptodome==3.20.0
 pydo==0.4.0
 PyJWT==2.9.0
+pyodbc==5.1.0
 pyOpenSSL==24.2.1
 pyparsing==3.1.4
+pypiwin32==223
 pyreadline3==3.4.1
 python-dateutil==2.8.0
 pytz==2024.1
@@ -116,14 +121,17 @@ requests==2.32.3
 requests-oauthlib==2.0.0
 rsa==4.9
 s3transfer==0.10.2
+semantic-version==2.10.0
 setuptools==74.0.0
 six==1.16.0
 sqlitedict==2.1.0
 tempora==5.7.0
+termcolor==2.4.0
 typing_extensions==4.12.2
 uritemplate==4.1.1
-urllib3==2.2.2
+urllib3==1.26.20
 virtualenv==20.26.5
+wcwidth==0.2.13
 websocket-client==1.8.0
 Werkzeug==3.0.4
 wrapt==1.16.0
