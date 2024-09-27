@@ -1,6 +1,6 @@
 branch-defaults:
   main:
-    environment: flask-env
+    environment: null
     group_suffix: null
 environment-defaults:
   flask-env:

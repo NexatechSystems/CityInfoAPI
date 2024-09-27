@@ -7,8 +7,8 @@ app = Flask(__name__)
 
 # Configure the database URI:
 # Example for MySQL, adjust as per your actual database
-app.config['SQLALCHEMY_DATABASE_URI'] = 'mssql+pyodbc://nexatechSYS:nexatech123@squaremiledb.ct60ksqggyse.eu-north-1.rds.amazonaws.com/CityInfoDB?driver=FreeTDS'
-
+app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://squaremileDB:squaremileDB@squaremileapidb.ct60ksqggyse.eu-north-1.rds.amazonaws.com:3306/CityInfoDB'
+app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app)
 
 # Define your models here (we'll do this in the next step)
