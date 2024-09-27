@@ -81,6 +81,6 @@ def hello():
     return "Hello, World!"
 
 if __name__ == "__main__":
-    # Use Flask's built-in server for developm ent
+    # Use Flask's built-in server for development
     app.run(debug=True)
 
